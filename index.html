@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tantra-fiesta 2K23</title>
+    <link rel="icon" type="image/x-icon" href="img/logo.png">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://use.typekit.net/ftj8drh.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <script src="js/matrix.js" defer></script>
+    <script src="js/background.js" defer></script>
+    <script src="js/main.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="js/gsap.min.js"></script>
+    <script type="module" src="js/index.js"></script>
+    <script src='js/typewriter.js' defer></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav_left">
+            <a href="#top"><img src="img/logo.png">
+            <p>TANTRAFIESTA</p></a>
+        </div>
+        <div class="nav_right">
+            <ul>
+                <li><a href="#about">ABOUT TF</a></li>
+                <li><a href="#events">EVENTS</a></li>
+                <li><a href="#venue">VENUE</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div id="particles-js"></div> 
+    <div class="bg_img">
+        <video src="img/background.mp4" autoplay muted loop></video>
+    </div>
+    <div id="top" class="container_old">
+        <div class="robot_img"></div>
+        <div class="main_box">
+            <div class="main_box_image">
+                <img src="img/Main_page_img1.png" id="image1">
+            </div>
+            <div class="main_box_text">
+                <span class="main_txt">Let's delve into the the AI world</span>
+            </div>
+            <div class="main_box_button">
+                <button onclick="startmatrix()" class="cybr-btn">
+                    Let's Dive<span aria-hidden>_</span>
+                    <span aria-hidden class="cybr-btn__glitch">Let's Dive_</span>
+                    <span aria-hidden class="cybr-btn__tag">TF</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container_loading">
+        <canvas id="Matrix"></canvas>
+        <div class="loading_text">Click the ready button to explore exciting Opportunity</div>
+        <button onclick="finish()" id="loading_button" class="cybr-btn matrix">
+            Ready<span aria-hidden>_</span>
+            <span aria-hidden class="cybr-btn__glitch">Ready_</span>
+            <span aria-hidden class="cybr-btn__tag">TF</span>
+        </button>
+    </div>
+
+    <div id="top" class="container_new">
+        <div class="intro_box">
+            <main>
+                <div class="content">
+                    <h2><i>T</i>antra<i>F</i>iesta<i>23</i></h2>
+                    <p><b>Genesis unleashed: AI's Dawn</b></p>
+                    <p>13 - 14 October</p>
+                    <p>Venue: IIIT Nagpur</p>
+                    <span class="typewriter">Get Ready to<span class="text"></span><div class="cursor_typewriter"></div></span>
+                </div>
+            </main>
+            <div class="cursor">
+                <div class="cursor__inner">
+                    <!-- cursor__inner-box elements come here -->
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                    <defs>
+                        <filter id="gooey">
+                            <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="3.2" />
+                            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 20 -7" result="goo" />
+                            <feComposite in="SourceGraphic" in2="goo" operator="atop" />
+                        </filter>
+                    </defs>
+                </svg>
+            </div>
+        </div>
+        
+    </div>
+    
+    <div class="container" id="about" style="--i:1">
+        <div class="box">
+            <div class="upper">ABOUT TANTRAFIESTA</div>
+            <div class="lower lower_about">
+                Tantra-fiesta is a premier annual technical event organized by IIITN. Our event promotes research, problem-solving skills, and fostering a sense of community among tech-enthusiasts. The theme of 5th edition of Tantra-fiesta’23 is “Genesis unleashed: AI dawn” focused on exploring the dynamics of deep learning, automation, Neural networks and inspiring students to contribute in the latest advancements in artificial intelligence. We unite visionaries, coders, entrepreneurs, animators, web-app developers, designers, and gamers to showcase their talents and embark on a journey towards growth and achievement. Last year, we witnessed a surge of over 1,000 participants from across India, with an impressive turnout of over 10,000 attendees at our event. Our technical fest showcased cutting-edge technology, innovative ideas, and a plethora of engaging fun activities to captivate our audience. This year we have an exciting array of activities lined up for our tech-fest, including coding contests, design-a-thons, Robo-Rumble, Capture the Flag, and much more
+            </div>
+        </div>
+    </div>
+    <div class="container" id="events" style="--i:2">
+        <div class="box">
+            <div class="upper">EVENTS</div>
+            <div class="lower">
+                <div class="card_container">
+                    <div class="cont">
+                        <div class="card" style="--path:url('img/gen-a-thon.webp')">
+                            <div class="card_info">
+                                <span class="info_header">Gen-A-Thon</span><br>
+                                <span class="info_text">Innovative AI Hackathon.</span><br>
+                                <span class="info_link"><a href="https://unstop.com/hackathons/gen-a-thon-tantrafiesta-23-iiit-nagpur-760544">Register Now !</a></span>
+                            </div>
+                        </div>
+                        <div class="card" style="--path:url('img/byte craft.webp')">
+                            <div class="card_info">
+                                <span class="info_header">ByteCraft</span><br>
+                                <span class="info_text">AIoT Transformation Opportunity.</span><br>
+                                <span class="info_link"><a href="https://unstop.com/competitions/bytecraft-tantrafiesta-23-iiit-nagpur-761088">Register Now !</a></span>
+                            </div>
+                        </div>              
+                        <div class="card" style="--path:url('img/game jam.webp')">
+                            <div class="card_info">
+                                <span class="info_header">Sentinent Strifle</span><br>
+                                <span class="info_text">Game jam.</span><br>
+                                <span class="info_link"><a href="https://unstop.com/competitions/game-jam-event-tantrafiesta-23-iiit-nagpur-761665">Register Now !</a></span>
+                            </div>
+                        </div>
+                        <div class="card" style="--path:url('img/Robo rumble.webp')">
+                            <div class="card_info">
+                                <span class="info_header">Robo Rumble</span><br>
+                                <span class="info_text">Robo Rumble: Adrenaline, Robotics, Competition, Spectacle.</span><br>
+                                <span class="info_link"><a href="https://unstop.com/competitions/robo-rumble-tantrafiesta-23-iiit-nagpur-760991">Register Now !</a></span>
+                            </div>
+                        </div>
+                        <div class="card" style="--path:url('img/Designathon.webp')">
+                            <div class="card_info">
+                                <span class="info_header">Designathon</span><br>
+                                <span class="info_text">Create genuine, real life solution.</span><br>
+                                <span class="info_link"><a href="https://unstop.com/competitions/design-a-thon-tantrafiesta-23-iiit-nagpur-761660">Register Now !</a></span>
+                            </div>
+                        </div>
+                        <div class="card" style="--path:url('img/verbium.webp')">
+                            <div class="card_info">
+                                <span class="info_header">Verbum magisterium</span><br>
+                                <span class="info_text">Spell Bee Challenge.</span><br>
+                                <span class="info_link"><a href="https://unstop.com/competitions/verbum-magisterium-the-battle-of-spells-tantrafiesta-23-iiit-nagpur-761664">Register Now !</a></span>
+                            </div>
+                        </div>
+                        <div class="card" style="--path:url('img/Enigma.webp')">
+                            <div class="card_info">
+                                <span class="info_header">EnigmaXplore CTF</span><br>
+                                <span class="info_text">CTF Style Cybersecurity Competition.</span><br>
+                                <span class="info_link"><a href="https://unstop.com/hackathons/engimaxplore-ctf-tantrafiesta-23-iiit-nagpur-765077">Register Now !</a></span>
+                            </div>
+                        </div>
+                        <div class="card" style="--path:url('img/Solve-a-thon.webp')">
+                            <div class="card_info">
+                                <span class="info_header">Solve-A-Thon</span><br>
+                                <span class="info_text">GPT 3.5 powered Hackathon.</span><br>
+                                <span class="info_link"><a href="https://unstop.com/competitions/gpt-35-solve-a-thon-a-hackathon-using-gen-ai-tantrafiesta-23-iiit-nagpur-761653">Register Now !</a></span>
+                            </div>
+                        </div>
+                        <div class="card" style="--path:url('img/Blender.webp')">
+                            <div class="card_info">
+                                <span class="info_header">Blender Blitz</span><br>
+                                <span class="info_text">Explore Abstract 3D Creativity!</span><br>
+                                <span class="info_link"><a href="https://unstop.com/competitions/blender-blitz-tantrafiesta-23-iiit-nagpur-761674">Register Now !</a></span>
+                            </div>
+                        </div>
+                        <div class="card" style="--path:url('img/BGMI.webp')">
+                            <div class="card_info">
+                                <span class="info_header">Battlefrenzy</span><br>
+                                <span class="info_text">Where Chicken Dinners are Served, and No Chickens are Harmed!</span><br>
+                                <span class="info_link"><a href="https://unstop.com/competitions/battlefrenzy-bgmi-tantrafiesta-23-iiit-nagpur-760522">Register Now !</a></span>
+                            </div>
+                        </div>
+                        <div class="card" style="--path:url('img/Chess.webp')">
+                            <div class="card_info">
+                                <span class="info_header">The Shatranj-UP</span><br>
+                                <span class="info_text">Chess: where you sacrifice your knights, bishops, and sanity just to capture a little wooden king.</span><br>
+                                <span class="info_link"><a href="https://unstop.com/events/the-shatranj-up-tantrafiesta-23-iiit-nagpur-760540">Register Now !</a></span>
+                            </div>
+                        </div>
+                        <div class="card" style="--path:url('img/valo.webp')">
+                            <div class="card_info">
+                                <span class="info_header">Overdrive</span><br>
+                                <span class="info_text">Where Pros Show No Mercy, Only Valor.</span><br>
+                                <span class="info_link"><a href="https://unstop.com/competitions/overdrive-valorant-showdown-tantrafiesta-23-iiit-nagpur-760533">Register Now !</a></span>
+                            </div>
+                        </div>
+                        <div class="card" style="visibility: hidden;">
+                            <div class="card_info">
+                                <span class="info_header">Gen-A-Thon</span><br>
+                                <span class="info_text">Innovative AI Hackathon.</span><br>
+                                <span class="info_link"><a href="#">Register Now !</a></span>
+                            </div>
+                        </div>
+                        <div class="card" style="--path:url('img/reporters.webp')">
+                            <div class="card_info">
+                                <span class="info_header">Reporters Rendezvous</span><br>
+                                <span class="info_text">Journalism Competition.</span><br>
+                                <span class="info_link"><a href="https://unstop.com/competitions/reporters-rendezvous-journalism-competition-tantrafiesta-23-iiit-nagpur-762024">Register Now !</a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="robot_vid">
+                    <img src="img/robot.gif" ></video>
+                </div>
+                <div class="div"> 
+                    <label class="t">
+                        <input class="t__checkbox" onclick="move()" type="checkbox" value="on">
+                        <svg class="t__svg" width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <ellipse class="t__svg-dot" cx="6" cy="6" rx="2" ry="1" fill="#fff" transform="rotate(-45,6,6)" />
+                            <circle class="t__svg-ring" cx="12" cy="12" r="6" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-dasharray="0 5 27.7 5" stroke-dashoffset="0.01" transform="rotate(-90,12,12)"/>
+                            <line class="t__svg-line" x1="12" y1="6" x2="12" y2="15" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-dasharray="9 9" stroke-dashoffset="3"/>
+                            <line class="t__svg-line" x1="12" y1="6" x2="12" y2="12" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-dasharray="6 6" stroke-dashoffset="6"/>
+                        </svg>
+                        <span class="t__sr">Click to power up the robot</span>
+                    </label>
+                    
+                </div> 
+                           
+            </div>
+        </div>
+    </div>
+    <div class="container" id="venue" style="--i:3">
+        <div class="box">
+            <div class="upper">VENUE</div>
+            <div class="lower" style="display: flex; gap: 20px;align-items: center;justify-content: center;">
+                <div class="venue_left">
+                    <span>
+                        <b>INDIAN INSTITUTE OF INFORMATION TECHNOLOGY, NAGPUR</b><br>
+                        <span class="venue_text">Survey No. 140,141/1 behind Br. Sheshrao Wankhade Shetkari Sahkari Soot Girni<br>
+                             Village - Waranga, PO - Dongargaon(Butibori), Tahsil- Nagpur (Rural)
+                             <br> District Nagpur, Maharashtra- 441108</span>
+                        <br><b>Contact us:</b>
+                        <span class="venue_text">
+                            gs@iiitn.ac.in
+                            1234567890
+                        </span>
+                            
+                    </span>
+                </div>
+                <div class="venue_right">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14905.112940602023!2d79.03059214999999!3d20.94133875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4c0529518230f%3A0x45b76be0621cbb88!2sIndian%20Institute%20of%20Information%20Technology%2C%20Nagpur%20(IIITN)!5e0!3m2!1sen!2sin!4v1695305976944!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer" style="--i:4">
+    </footer>
+</body>
+</html>
